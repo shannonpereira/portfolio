@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Preview.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+          
+            <div class="nav-toggle">&#9776;</div>
+            <div class="overlay"></div> <!-- Add this line -->
+            <div class="header-text fade-in">
+                <h1 class="animated-text">Hi! I'm <span>Shannon</span><br>Pereira</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="about-content" id="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>At 20 years old, I'm deeply passionate about the dynamic intersection of technology and creativity. Currently immersed in my engineering studies, I thrive on blending technical expertise with imaginative thinking to pioneer innovative solutions. Whether it's tinkering with new ideas or diving into complex projects, I'm driven by a relentless curiosity to push boundaries and make a meaningful impact.</p>
+
+                    <p>I thrive on bridging theoretical knowledge with practical applications, actively engaging in projects that leverage cutting-edge technologies to solve real-world challenges. Whether it's developing autonomous systems or enhancing cybersecurity protocols, each endeavor fuels my drive for innovation.</p>
+                
+                    <p>Beyond technical expertise, I place great value on collaboration and effective communication, recognizing them as vital to achieving success. Working within diverse teams has enriched my perspective and equipped me with adaptability in dynamic environments.</p>
+                
+                    <p>Outside of academics, I'm an enthusiastic explorer of art and culture. I believe creativity serves as a catalyst for transformative solutions, influencing my approach to integrating artistic principles into engineering projects. This interdisciplinary mindset not only broadens my horizons but also nurtures innovative thinking.</p>
+                
+                    <p>Looking ahead, my goal is to utilize my skills and knowledge to contribute meaningfully to society. I'm dedicated to pioneering advancements that address global challenges while advocating for sustainable and inclusive practices. Join me as I navigate the evolving landscape of engineering with curiosity and determination.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.png" alt="About Image">
+                </div>
+            </div>
+            <div class="tab-titles">
+                <p class="tab-links" onclick="toggleContent('skills')">Skills</p>
+                <p class="tab-links" onclick="toggleContent('projects')">Projects</p>
+            </div>
+            <div id="skills" class="about-content-section" style="display: none;">
+                <h2>Skills</h2>
+                <div class="skills-content">
+                    <p>My skill set encompasses a blend of technical proficiency and creative problem-solving:</p>
+                    <ul>
+                        <li>Strategic Innovation</li>
+                        <li>Collaborative Leadership</li>
+                        <li>Cutting-edge Technology Integration</li>
+                        <li>Adaptive Thinking</li>
+                        <li>Effective Communication</li>
+                        <li>Agile Project Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="projects" class="about-content-section"  style="display: none;">
+                <h2>Projects</h2>
+                <div class="projects-content">
+                    <div class="project" data-project-id="1" style="justify-content: center;">
+                        <h3>Autonomous Defense System for Military</h3>
+                        <p>Developed an advanced autonomous defense system utilizing cutting-edge AI and robotics to enhance military operations and security.</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                    <div class="project" data-project-id="2">
+                        <h3>YOLO v5 Intruder Detection System</h3>
+                        <p>Implemented a real-time intruder detection system using YOLO v5, leveraging deep learning and computer vision for enhanced security measures.</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="project-details" style="display: none;">
+                <h2 id="project-details-title"></h2>
+                <div id="project-details-content">
+                    <!-- Detailed content will be populated dynamically -->
+                </div>
+                <button id="close-details-btn">Close</button>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <h3>Institution of Engineers (India) (IEI) W 2023 - 2024</h3>
+                <p>IEI Core Team Member Mangalore</p>
+                <p>Collaborated with a team to organize and manage technical events, workshops, and seminars. Actively contributed to team meetings, providing insights and suggestions for continuous improvement of IEI activities.</p>
+               <br></br><a href="https://iei-scem.vercel.app/">IEEE Core Team Website</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Institute of Electrical and Electronics Engineers (IEEE) 2022 - 2024</h3>
+                <p>IEEE Team Member Mangalore</p>
+                <p>Gained insights into real-world applications of engineering principles by visiting industry-leading companies, including Novigo Solutions and A1 Logics, where I observed software development.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p >&copy; 2024 Shannon Pereira. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

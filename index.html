@@ -63,7 +63,7 @@
 <section id="hero" class="hero section dark-background" style="position: relative; text-align: right; color: #fff; overflow: hidden;">
   <img id="hero-image" src="images/shan.jpeg" alt="Shannon Pereira" style="width: 100%; height: auto; display: block;"/>
   <div class="container" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); padding: 0 20px;">
-    <h2 style="margin: 0;">Shannon Pereira</h2>
+    <h2 style="margin: 0; margin-top: 200px;">Shannon Pereira</h2>
     <p style="margin: 0;">I'm a <span class="typed" data-typed-items="Designer, Developer, Vocalist"></span></p>
     <div class="social-links" style="margin-top: 10px;">
       <a href="https://github.com/shannonpereira" style="color: #fff; margin: 0 10px; text-decoration: none;"><i class="bi bi-github"></i></a>
@@ -377,12 +377,10 @@
     </div>
   </nav>
 </div>
+
 <section id="portfolio" class="portfolio section">
-
   <div class="container">
-
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
         <li data-filter="*" class="filter-active">All</li>
         <li data-filter=".filter-app">App</li>
@@ -390,43 +388,36 @@
       </ul><!-- End Portfolio Filters -->
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-        <!-- Healthcare System with Multiple Screenshots -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-          <div class="portfolio-content h-100">
-            <img src="images/health.png" class="img-fluid" alt="Healthcare System Screenshot 1">
-            <div class="portfolio-info">
-              <h4>Healthcare System</h4>
-              <p>A comprehensive web-based healthcare management system designed to streamline patient records, appointments, and medical histories.</p>
-              <a href="images/health1.png" title="Healthcare System Screenshot 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/health2.png" title="Healthcare System Screenshot 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/health3.png" title="Healthcare System Screenshot 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="healthcare.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
+       
 
         <!-- Intelligent Fleet Management System with Six Screenshots -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <div class="portfolio-content h-100">
-            <img src="images/fleet1.png" class="img-fluid" alt="Intelligent Fleet Management System Screenshot 1">
+            <img src="images/fleet1.png" class="portfolio-image" alt="Intelligent Fleet Management System Screenshot 1">
             <div class="portfolio-info">
               <h4>Intelligent Fleet Management System</h4>
               <p>Fleet Master is an all-in-one fleet management solution using React.js, Tailwind CSS, Bootstrap, Leaflet maps, Firebase authentication, and MongoDB.</p>
               <a href="images/fleet1.png" title="Intelligent Fleet Management System Screenshot 1" data-gallery="portfolio-gallery-fleet" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/fleet2.png" title="Intelligent Fleet Management System Screenshot 2" data-gallery="portfolio-gallery-fleet" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/fleet3.png" title="Intelligent Fleet Management System Screenshot 3" data-gallery="portfolio-gallery-fleet" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/fleet4.png" title="Intelligent Fleet Management System Screenshot 4" data-gallery="portfolio-gallery-fleet" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/fleet5.png" title="Intelligent Fleet Management System Screenshot 5" data-gallery="portfolio-gallery-fleet" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
-
+ <!-- Healthcare System with Multiple Screenshots -->
+ <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+  <div class="portfolio-content h-100">
+    <img src="images/health.png" class="portfolio-image" alt="Healthcare System Screenshot 1">
+    <div class="portfolio-info">
+      <h4>Healthcare System</h4>
+      <p>A comprehensive web-based healthcare management system designed to streamline patient records, appointments, and medical histories.</p>
+      <a href="images/health1.png" title="Healthcare System Screenshot 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+      <a href="healthcare.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+    </div>
+  </div>
+</div><!-- End Portfolio Item -->
         <!-- Learning Management System -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <div class="portfolio-content h-100">
-            <img src="images/lms1.png" class="img-fluid" alt="Learning Management System">
+            <img src="images/lms1.png" class="portfolio-image" alt="Learning Management System">
             <div class="portfolio-info">
               <h4>Learning Management System</h4>
               <p>The Learning Management System uses React, MongoDB, Bootstrap, CSS, and HTML for a robust frontend experience.</p>
@@ -435,53 +426,71 @@
             </div>
           </div>
         </div><!-- End Portfolio Item -->
-<!-- Intruder Detection System -->
-<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-  <div class="portfolio-content h-100">
-    <img src="images/intruder.jpg" class="img-fluid" alt="Intruder Detection System Screenshot 1">
-    <div class="portfolio-info">
-      <h4>Intruder Detection System</h4>
-      <p>An advanced system for detecting intruders using various sensors and real-time alerts.</p>
-      <a href="images/person.png" title="Intruder Detection System Screenshot 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-      <a href="images/intrudersystem.png" title="Intruder Detection System Screenshot 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-      <a href="intruder-detection.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-    </div>
-  </div>
-</div><!-- End Portfolio Item -->
+
+        <!-- Intruder Detection System -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="images/intruder.jpg" class="portfolio-image" alt="Intruder Detection System Screenshot 1">
+            <div class="portfolio-info">
+              <h4>Intruder Detection System</h4>
+              <p>An advanced system for detecting intruders using various sensors and real-time alerts.</p>
+              <a href="images/intruder.jpg" title="Intruder Detection System Screenshot 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="intruder-detection.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
 
         <!-- Autonomous Defense System -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
           <div class="portfolio-content h-100">
-            <img src="images/def.png" class="img-fluid" alt="Autonomous Defense System Screenshot 1">
+            <img src="images/def.png" class="portfolio-image" alt="Autonomous Defense System Screenshot 1">
             <div class="portfolio-info">
               <h4>Autonomous Defense System</h4>
               <p>This system uses YOLOv8 for detection, Servo for rotation, and ESP for communication, providing a highly efficient defense mechanism.</p>
               <a href="images/auto.png" title="Autonomous Defense System Screenshot 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="images/ads.jpg" title="Autonomous Defense System Screenshot 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="autonomous-defense.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
-        
+
+        <!-- Melodies Music App -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <div class="portfolio-content h-100">
-            <img src="images/melodies.png" class="img-fluid" alt="Melodies Music App Screenshot">
+            <img src="images/melodies.png" class="portfolio-image" alt="Melodies Music App Screenshot">
             <div class="portfolio-info">
               <h4>Melodies Music App</h4>
               <p>A sleek music app prototype designed using Figma, featuring an intuitive interface for discovering and enjoying music.</p>
               <a href="images/melodies.png" title="Melodies Music App Screenshot" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="https://www.figma.com/proto/u4YY74tnr64S4mF425At6S/melodies?node-id=0-1&t=VBz3QANkVR8Kjj0R-1" title="View Figma Prototype" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i> Prototype</a>
-              <a href="your-app-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-    </div>
-  </div>
-</div><!-- End Portfolio Item -->
+              <a href="https://www.figma.com/proto/u4YY74tnr64S4mF425At6S/melodies?node-id=0-1&t=VBz3QANkVR8Kjj0R-1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
       </div><!-- End Portfolio Container -->
-
     </div>
-
   </div>
+</section><!-- End Portfolio Section -->
 
-</section><!-- /Portfolio Section -->
+<style>
+  .portfolio-image {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+  }
+  
+  .portfolio-info {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+</style>
+
 
 </section>
   <section id="contactt">
